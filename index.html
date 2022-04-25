@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +7,22 @@
     <title>Mi primer forumario</title>
 </head>
 <body>
-    <h1>Mi primer formulario!</h1>
+    <h1>Bienvenidos a instaPet</h1>
+    <p>El lugar para encontrarle pareja a tu mascota, sin importar la raza!</p>
     <form>
-        <label>Nombre
-            <input placeholder="Ej: Manuel" type="text" name="nombre">
+        <label>Nombre de tu mascota
+            <input placeholder="Ej: Firulais" type="text" name="nombre" required>
         </label>
-        <label>Contraseña
-            <input placeholder="Ej: perrito2" type="password" name="contraseña">
+        <label>Edad (en años)
+            <input placeholder="Ej: 8" type="number" name="edad" required>
         </label>
-        <label>E-mail
-            <input placeholder="Ej: juanchito@google.com" type="email" name="email">
+        <label>E-mail del dueño
+            <input placeholder="Ej: juanchito@google.com" type="email" name="email" required>
         </label>
+        <label for="color">Color de tu mascota</label>
+        <input placeholder="Ej: Marrón" type="color" name="color" id="color" required>
+        <label for="contraseña">Contraseña</label>
+        <input placeholder="Ej: miperrito22" type="password" name="contraseña" id="contraseña" required>
         <input type="submit" value="Enviar!">
     </form>
 </body>
