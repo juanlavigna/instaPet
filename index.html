@@ -8,22 +8,56 @@
 </head>
 <body>
     <h1>Bienvenidos a instaPet</h1>
-    <p>El lugar para encontrarle pareja a tu mascota, sin importar la raza!</p>
-    <form>
+    <h3>El lugar para encontrarle pareja a tu mascota, sin importar la raza!</h3>
+    <br>
+    <form action="https://formspree.io/juanlavigna@gmail.com" method="post">
         <label>Nombre de tu mascota
-            <input placeholder="Ej: Firulais" type="text" name="nombre" required>
+            <input placeholder="Ej: Firulais" type="text" name="nombre"  >
         </label>
+        <br>
         <label>Edad (en años)
-            <input placeholder="Ej: 8" type="number" name="edad" required>
+            <input placeholder="Ej: 8" type="number" name="edad"  >
         </label>
+        <br>
         <label>E-mail del dueño
-            <input placeholder="Ej: juanchito@google.com" type="email" name="email" required>
+            <input placeholder="Ej: juanchito@google.com" type="email" name="email"  >
         </label>
+        <br>
+        <br>
         <label for="color">Color de tu mascota</label>
-        <input placeholder="Ej: Marrón" type="color" name="color" id="color" required>
+        <input placeholder="Ej: Marrón" type="color" name="color" id="color"  >
+        <br>
+        <br>
         <label for="contraseña">Contraseña</label>
-        <input minlength="8" maxlength="16" placeholder="Ej: miperrito22" type="password" name="contraseña" id="contraseña" required>
+        <input minlength="8" maxlength="16" placeholder="Ej: miperrito22" type="password" name="contraseña" id="contraseña"  >
+        <br>
+        <br>
+        <div>Sexo de tu mascota:
+        <label>Macho
+            <input type="radio" name="sexo" value="macho">
+        </label>
+        <label>Hembra
+            <input type="radio" name="sexo" value="hembra">
+        </label>
+        </div>
+        <br>
+        <label for="tipo-mascota"></label>Tipo de mascota
+        <select id="tipo-mascota" name="tipo-mascota">
+            <option value="dog">Perro</option>
+            <option value="cat">Gato</option>
+            <option value="parrot">Loro</option>
+            <option value="uron">Urón</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="descripcion" placeholder="Describí a tu mascota en pocas palabras" cols="40" rows="10"></textarea>
+        <br>
+        <label>Acepto las <a href="#">Bases y condiciones</a>
+            <input type="checkbox" name="bases-condiciones" value="acepto">
+        </label>
+        <br>
         <input type="submit" value="Enviar!">
+
     </form>
 </body>
 </html>
